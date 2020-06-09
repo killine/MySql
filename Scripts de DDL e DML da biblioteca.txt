@@ -96,3 +96,24 @@ INSERT INTO esmprestimo_devolucao (codFunc, codLi, ra, dataDeEmprestimo, dataDeD
 (3,3,9,'2020-08-01','2020-09-02'),
 (1,9,8,'2020-04-04','2020-05-05');
 
+
+--------------------------------------------------------
+
+
+ALTER TABLE livros ADD COLUMN pág int
+ALTER TABLE livros ADD COLUMN qtdeExemplares int
+
+
+---------------------------------------------------------
+UPDATE livros SET pág = 430, qtdeExemplares = 5 WHERE codLi = 1;
+UPDATE livros SET pág = 175, qtdeExemplares = 5 WHERE codLi = 2;
+UPDATE livros SET pág = 366, qtdeExemplares = 3 WHERE codLi = 3;
+UPDATE livros SET pág = 236, qtdeExemplares = 10 WHERE codLi = 4;
+UPDATE livros SET pág = 270, qtdeExemplares = 8 WHERE codLi = 5;
+UPDATE livros SET pág = 150, qtdeExemplares = 4 WHERE codLi = 6;
+UPDATE livros SET pág = 180, qtdeExemplares = 4 WHERE codLi = 7;
+UPDATE livros SET pág = 99,  qtdeExemplares = 7 WHERE codLi = 8;
+UPDATE livros SET pág = 521, qtdeExemplares = 2 WHERE codLi = 9;
+UPDATE livros SET pág = 604, qtdeExemplares = 1 WHERE codLi = 10;
+
+---------------------------------------------------------
